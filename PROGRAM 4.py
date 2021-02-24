@@ -1,6 +1,14 @@
-import math
+lower = 100
+upper = 2000
 
-angka = 9
+for num in range(lower, upper+1):
+    order = len(str(num))
+    sum = 0
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
 
-akar_angka = math.sqrt(angka)
-print('akar dari', angka, 'adalah', akar_angka)
+    if num == sum:
+        print(num)

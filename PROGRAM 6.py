@@ -1,12 +1,9 @@
-num1 = 10
-num2 = 14
-num3 = 12
+kata = 'nama saya adellia maharani putri'
 
-if(num1 >= num2) and (num1 >= num3):
-    terbesar = num1
-elif(num2 >= num1) and (num2 >= num3):
-    terbesar = num2
-else:
-    terbesar = num3
-
-print('nilai terbesar : ', terbesar)
+jum = 0
+for letter in kata:
+    if letter == 'a':
+        jum += 1
+        #continue
+    print('huruf sekarang : ', letter)
+print('jumlah : ', jum)

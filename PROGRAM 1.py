@@ -1,6 +1,11 @@
-kilometers = float(input('input valid kilometer : '))
-
-conv_fac = 0.621317
-
-miles = kilometers * conv_fac
-print('%0.2f kilometers is equal to %0.2f' %(kilometers, miles))
+num = 407
+if num > 1:
+    for i in range(2, num):
+        if(num % i) == 0:
+            print(num, 'bukan bilangan prima')
+            print(i, 'kali', num//i, 'adalah', num)
+            break
+    else:
+        print(num, 'adalah bilangan prima')
+else:
+    print(num, 'bukan blangan prima')

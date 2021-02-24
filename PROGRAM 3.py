@@ -1,9 +1,12 @@
-x = 5
-y = 10
+x = [[12,7], 
+    [4,5],
+    [3,8]]
 
-temp = x
-x = y
-y = temp
+hasil = [[0,0,0], [0,0,0]]
 
-print('nilai x sekarang : {}' .format(x))
-print('nilai y sekarany : {}' .format(y))
+for i in range (len(x)):
+    for j in range (len(x[0])):
+        hasil [j] [i] = x [i] [j]
+
+for h in hasil:
+    print(h)

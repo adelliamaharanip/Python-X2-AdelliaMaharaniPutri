@@ -1,12 +1,4 @@
-tahun = int(input('masukkan tahun : '))
+num = 12
 
-if (tahun % 4) == 0:
-    if (tahun % 100) == 0:
-        if (tahun % 400) == 0:
-            print('{0} adalah tahun kabisat' .format(tahun))
-        else:
-            print('{0} bukan tahun kabisat' .format(tahun))
-    else:
-        print('{0} adalah tahun kabisat' .format(tahun))
-else:
-    print('{0} bukan tahun kabisat' .format(tahun))
+for i in range (1, 11):
+    print(num, 'x', i, '=', num*i)
